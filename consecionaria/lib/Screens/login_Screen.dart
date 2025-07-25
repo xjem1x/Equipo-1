@@ -15,7 +15,7 @@ class LoginScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const SizedBox(height: 80),
-              // Logo o título
+              //  titulo
               const Text(
                 'CONCESIONARIA',
                 style: TextStyle(
@@ -26,7 +26,7 @@ class LoginScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 40),
-              // Tarjeta blanca con formulario
+              // tarjeta blanca con formulario
               Card(
                 elevation: 8,
                 shape: RoundedRectangleBorder(
@@ -37,14 +37,14 @@ class LoginScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       const Text(
-                        'INICIAR SESIÓN',
+                        'INICIAR SESION',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       const SizedBox(height: 24),
-                      // Campo de usuario
+                      // campo de usuario
                       TextFormField(
                         decoration: InputDecoration(
                           labelText: 'Usuario',
@@ -55,7 +55,7 @@ class LoginScreen extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 16),
-                      // Campo de contraseña
+                      // campo de contraseña
                       TextFormField(
                         obscureText: true,
                         decoration: InputDecoration(
@@ -67,7 +67,7 @@ class LoginScreen extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 24),
-                      // Botón de login
+                      // boton de login
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           padding: const EdgeInsets.symmetric(vertical: 16),
@@ -83,7 +83,7 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 24),
-              // Enlace a registro
+              // enlace a registro
               TextButton(
                 onPressed: () {
                   Navigator.push(
