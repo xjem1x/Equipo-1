@@ -15,7 +15,7 @@ class RegisterScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const SizedBox(height: 20),
-              // Tarjeta blanca con formulario
+              // tarjeta blanca con formulario
               Card(
                 elevation: 8,
                 shape: RoundedRectangleBorder(
@@ -33,7 +33,7 @@ class RegisterScreen extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 24),
-                      // Campos del formulario
+                      // campos del formulario
                       TextFormField(
                         decoration: InputDecoration(
                           labelText: 'Nombre completo',
@@ -77,7 +77,7 @@ class RegisterScreen extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 24),
-                      // Botón de registro
+                      // boton de registro
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           padding: const EdgeInsets.symmetric(vertical: 16),
@@ -93,7 +93,7 @@ class RegisterScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              // Enlace a login
+              // enlace a login
               TextButton(
                 onPressed: () {
                   Navigator.pop(context);
