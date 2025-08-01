@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:consecionaria/screens/register_screen.dart';
+import 'cars_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -15,7 +16,6 @@ class LoginScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const SizedBox(height: 80),
-              //  titulo
               const Text(
                 'CONCESIONARIA',
                 style: TextStyle(
@@ -26,7 +26,6 @@ class LoginScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 40),
-              // tarjeta blanca con formulario
               Card(
                 elevation: 8,
                 shape: RoundedRectangleBorder(
@@ -37,14 +36,13 @@ class LoginScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       const Text(
-                        'INICIAR SESION',
+                        'INICIAR SESIÓN',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       const SizedBox(height: 24),
-                      // campo de usuario
                       TextFormField(
                         decoration: InputDecoration(
                           labelText: 'Usuario',
@@ -55,7 +53,6 @@ class LoginScreen extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 16),
-                      // campo de contraseña
                       TextFormField(
                         obscureText: true,
                         decoration: InputDecoration(
@@ -67,7 +64,6 @@ class LoginScreen extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 24),
-                      // boton de login
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           padding: const EdgeInsets.symmetric(vertical: 16),
@@ -75,7 +71,14 @@ class LoginScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(8),
                           ),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const AutosTableScreen()),
+                          );
+                        },
                         child: const Text('INGRESAR'),
                       ),
                     ],
@@ -83,7 +86,6 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 24),
-              // enlace a registro
               TextButton(
                 onPressed: () {
                   Navigator.push(
