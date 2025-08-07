@@ -32,7 +32,7 @@ class AutosTableScreen extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.add),
             onPressed: () {
-              // Para agregar
+              // Para
             },
           ),
         ],
