@@ -57,6 +57,7 @@ class AutosTableScreen extends StatelessWidget {
                 ),
               ),
               onTap: () {
+                
               },
             ),
           );
